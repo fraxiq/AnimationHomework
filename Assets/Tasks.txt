@@ -1,0 +1,17 @@
+1. Remove the "Assets\Scripts\Propeller.cs" from Propeller GameObject. Make the propeller spin with an animation clip. Hint: Make the animation clip to be in "Legacy" mode. +
+2. Add to each gate animation to move it in different directions as you like. 		+   
+    a. Make different animations for each gate. +
+    b. Stop all animations at the start of the game. Keep the first gate's animation switched on.+
+    c. When the player (plane) passes the current gate, stop its animation and play the animation to the next gate. +
+    e. Make the particle system simulation space be "World" for a more epic experience. :)+
+3. Attach the "Assets/Audio/SpitfireLoop.mp3"  audio clip to the plane. Decrease volume level! (~0.15f)
+4. When the player died, change the pitch of the engine sound "smoothly" to 0.1f. +
+5. Attach "Assets/Audio/Burn.mp3" to all FlameStreams inside the Gates. Stops all audio sources at the start of the game. 
+Make the audio source 3D sound and fix the max distance to be 30. Change the settings to hear the sound when the player(plane) is near the flames. 
+Link the volume and play the sound when the flames are enabled just like in real life.
+    a. When the flames started, "smoothly" increase the volume to 0.5f. When the flames volume is greater than 0, use the "AudioSource.Play()" method.
+    b. When the player (plane) passes the current gate, decrease the sound "smoothly" to 0. When the current gate's flames volume is equal to 0, use the "AudioSource.Stop()" method.
+HINT: Use the "Assets/Example.mkv" video for more references. +
+6. [Optional Task] Implement a music player inside the game.
+Add your favorite song to the project.
+Add a buttons in the UI or/and shortcut key to play/pause/stop the song.
